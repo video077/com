@@ -1,30 +1,60 @@
-# My Awesome Project
-
-This is a description of my awesome project.
-
-## Right Aligned Images
-
-<div align="right">
-
-![Image 1](image1.jpg)
-![Image 2](image2.jpg)
-![Image 3](image3.jpg)
-![Image 4](image4.jpg)
-![Image 5](image5.jpg)
-![Image 6](image6.jpg)
-
-</div>
-
-## Center Aligned Images
-
-<div align="center">
-
-![Image 7](image7.jpg)
-![Image 8](image8.jpg)
-![Image 9](image9.jpg)
-![Image 10](image10.jpg)
-![Image 11](image11.jpg)
-![Image 12](image12.jpg)
-
-</div>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Image Gallery</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .image-container.right {
+            justify-content: flex-end;
+        }
+        
+        .image-container.center {
+            justify-content: center;
+        }
+        
+        .image-container img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub Image Gallery</h1>
+    
+    <h2>Images aligned to the right:</h2>
+    <div class="image-container right">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+        <img src="image6.jpg" alt="Image 6">
+    </div>
+    
+    <h2>Images aligned to the center:</h2>
+    <div class="image-container center">
+        <img src="image7.jpg" alt="Image 7">
+        <img src="image8.jpg" alt="Image 8">
+        <img src="image9.jpg" alt="Image 9">
+        <img src="image10.jpg" alt="Image 10">
+        <img src="image11.jpg" alt="Image 11">
+        <img src="image12.jpg" alt="Image 12">
+    </div>
+    
+    <h2>Website URL redirection code:</h2>
+    <script>
+        function redirect() {
+            window.location.href = "https://www.example.com";
+        }
+        
+        // Call the redirect function after a delay of 3 seconds
+        setTimeout(redirect, 3000);
+    </script>
+</body>
+</html>
